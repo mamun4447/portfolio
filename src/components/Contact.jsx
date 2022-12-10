@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   // service_nk2g23v;
@@ -16,17 +17,17 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast.success(result.text);
         },
         (error) => {
-          console.log(error.text);
+          toast.error(error.text);
         }
       );
     event.target.reset();
   };
 
   return (
-    <>
+    <div id="contact">
       <h1 className="text-5xl text-center my-5">Send Email</h1>
       <form
         className="flex flex-col lg:w-1/2 mx-auto shadow-2xl border border-spacing-1 border-cyan-400 p-5 rounded-md  mb-10"
@@ -61,7 +62,7 @@ const Contact = () => {
           type="submit"
         />
       </form>
-    </>
+    </div>
   );
 };
 

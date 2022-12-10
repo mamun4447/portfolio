@@ -15,7 +15,7 @@ const Home = () => {
         <img className="fixed h-full" src={background} alt="" />
       </div>
       <header className="bg-slate-900 h-full bg-opacity-70 text-white  relative pattern px-10">
-        <div className="container px-6 mx-auto ">
+        <div className="md:container px-6 mx-auto ">
           <Nav />
 
           <Hero />

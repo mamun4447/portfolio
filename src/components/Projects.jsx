@@ -1,129 +1,76 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import greeho from "../assets/greeho.png";
+import getRide from "../assets/getRide.png";
+import tourPlan from "../assets/tourPlan.png";
 
 const Projects = () => {
-  const courses = [
+  const projects = [
     {
       title: "Greeho-Sheba",
       url: "https://greeho-sheba-c3c63.web.app",
-      description: "This is a full-stack service Providing website",
+      description:
+        "Full-stack service Providing website. Where customer and Provider can get each-other.",
       technologies: "RectJs, NodeJs, ExpressJs, MongoDB, Firebase Auth",
-      image: { greeho },
-      time: "",
+      image: `${greeho}`,
+      time: "20 Oct 2022 - Present",
+    },
+    {
+      title: "Get-Ride",
+      url: "https://get-ride-44eec.web.app/",
+      description: "This is a full-stack service Bicycle reselling platform.",
+      technologies: "RectJs, NodeJs, ExpressJs, MongoDB, Firebase Auth",
+      image: `${getRide}`,
+      time: "23 Nov 2022 - Present",
+    },
+    {
+      title: "Tour-Plan",
+      url: "https://greeho-sheba-c3c63.web.app",
+      description:
+        "This is a full-stack customer review giving platform about tourist service.",
+      technologies: "RectJs, NodeJs, ExpressJs, MongoDB, Firebase Auth",
+      image: `${tourPlan}`,
+      time: "20 Oct 2022 - Present",
     },
   ];
-  console.log(courses);
+  // console.log(projects);
   return (
-    <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20 ">
+    <div id="projects" className="py-16 mx-auto w-62  lg:py-20 ">
       <h1 className="text-5xl my-10 text-center">My Projects</h1>
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  sm:mx-auto lg:max-w-full">
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-          <img
-            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            className="object-cover w-full h-64"
-            alt=""
-          />
-          <div className="p-5 border border-t-0">
-            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-              <span className="text-gray-600">— 28 Dec 2020</span>
-            </p>
-            <a
-              href="/"
-              aria-label="Category"
-              title="Visit the East"
-              className=" text-black inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            >
-              Visit the East
-            </a>
-            <p className="mb-2 text-gray-700">description</p>
-
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-          <img
-            src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            className="object-cover w-full h-64"
-            alt=""
-          />
-          <div className="p-5 border border-t-0">
-            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+          <a
+            href={project.url}
+            key={project.name}
+            className="overflow-hidden  duration-100  rounded shadow-sm hover:-translate-y-2 transition text-white"
+          >
+            <div className="overflow-y-auto">
+              <img
+                src={project.image}
+                className="object-cover w-full h-52 "
+                alt=""
+              />
+            </div>
+            <div className="p-5 border  bg-slate-200 opacity-70  h-62">
+              <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+                <span className="text-gray-600">— {project.time}</span>
+              </p>
               <a
                 href="/"
-                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                 aria-label="Category"
-                title="traveling"
+                title="Visit the East"
+                className=" text-black inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
-                traveling
+                {project.title}
               </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
-            </p>
-            <a
-              href="/"
-              aria-label="Category"
-              title="Simple is better"
-              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            >
-              Simple is better
-            </a>
-            <p className="mb-2 text-gray-700">
-              Sed ut perspiciatis unde omnis iste natus error sit sed quia
-              consequuntur magni voluptatem doloremque.
-            </p>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-          <img
-            src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            className="object-cover w-full h-64"
-            alt=""
-          />
-          <div className="p-5 border border-t-0">
-            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-              <a
-                href="/"
-                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                aria-label="Category"
-                title="traveling"
-              >
-                traveling
-              </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
-            </p>
-            <a
-              href="/"
-              aria-label="Category"
-              title="Film It!"
-              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            >
-              Film It!
-            </a>
-            <p className="mb-2 text-gray-700">
-              Sed ut perspiciatis unde omnis iste natus error sit sed quia
-              consequuntur magni voluptatem doloremque.
-            </p>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
-          </div>
-        </div>
+              <p className="mb-2 text-gray-700">{project.description}</p>
+              <p className="mb-2 text-gray-700">
+                <span className="font-bold">Technologies: </span>
+                {project.technologies}.
+              </p>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   );
