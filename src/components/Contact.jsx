@@ -8,6 +8,8 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    window.alert("Do not disturb!");
+
     emailjs
       .sendForm(
         "service_nk2g23v",
@@ -44,6 +46,7 @@ const Contact = () => {
           type="email"
           name="email"
           placeholder="Your Email"
+          required
         />
         <input
           type="text"

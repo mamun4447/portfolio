@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <>
-      <nav className="flex flex-col py-6 sm:flex-row justify-center md:justify-between items-center md:items-center sticky top-0">
+      <nav className="px-5 flex flex-col py-6 sm:flex-row justify-center md:justify-between items-center md:items-center">
         <div>
           <Link
             to="/"
@@ -25,8 +25,9 @@ const Nav = () => {
             <li>
               <a href="#skills">Skills</a>
             </li>
+
             <li>
-              <a href="#education">Education</a>
+              <a href="#Blogs">Blogs</a>
             </li>
             <li>
               <a href="#contact">Contact</a>

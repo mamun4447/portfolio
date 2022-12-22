@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="flex flex-col-reverse items-center py-6 lg:h-[36rem] lg:flex-row">
       <div className="lg:w-1/2">
         <h2 className="text-3xl font-semibold text-gray-100 lg:text-4xl">
-          Hello, This is <br />{" "}
+          <span className="text-2xl">Hello, This is</span> <br />{" "}
           <span className="text-accent">Abdullah Al-Mamun</span>
         </h2>
         <TypeAnimation
