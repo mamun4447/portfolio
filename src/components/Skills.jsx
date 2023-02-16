@@ -1,5 +1,9 @@
 import React from "react";
 import Reveal from "react-reveal/Zoom";
+import js from "../assets/js.png";
+import firebase from "../assets/firebase.png";
+import git from "../assets/git.png";
+import router from "../assets/router.png";
 
 const Skills = () => {
   return (
@@ -48,6 +52,19 @@ const Skills = () => {
             <h1 className="text-2xl text-center">Tailwind CSS</h1>
           </div>
 
+          {/* <===<javascript>===> */}
+          <div
+            className="mx-auto hover:-translate-y-1 hover:shadow-2xl"
+            title="JavaScript"
+          >
+            <img
+              src={js}
+              alt=""
+              className="w-32 h-32 shadow-2xl rounded-full p-4 border"
+            />
+            <h1 className="text-2xl text-center">JavaScript</h1>
+          </div>
+
           {/* <===ReactJs===> */}
           <div
             className="mx-auto hover:-translate-y-1 hover:shadow-2xl"
@@ -85,6 +102,45 @@ const Skills = () => {
               className="w-32 h-32 shadow-2xl rounded-full p-4 border"
             />
             <h1 className="text-2xl text-center">MongoDB</h1>
+          </div>
+
+          {/* <===<Firebase>===> */}
+          <div
+            className="mx-auto hover:-translate-y-1 hover:shadow-2xl"
+            title="Firebase"
+          >
+            <img
+              src={firebase}
+              alt=""
+              className="w-32 h-32 shadow-2xl rounded-full p-4 border"
+            />
+            <h1 className="text-2xl text-center">Firebase</h1>
+          </div>
+
+          {/* <===<Github>===> */}
+          <div
+            className="mx-auto hover:-translate-y-1 hover:shadow-2xl"
+            title="GitHub"
+          >
+            <img
+              src={git}
+              alt=""
+              className="w-32 h-32 shadow-2xl rounded-full p-4 border"
+            />
+            <h1 className="text-2xl text-center">GitHub</h1>
+          </div>
+
+          {/* <===<Router>===> */}
+          <div
+            className="mx-auto hover:-translate-y-1 hover:shadow-2xl"
+            title="React Router"
+          >
+            <img
+              src={router}
+              alt=""
+              className="w-32 h-32 shadow-2xl rounded-full p-4 border"
+            />
+            <h1 className="text-2xl text-center">React Router</h1>
           </div>
 
           {/* <===<Django>===> */}
