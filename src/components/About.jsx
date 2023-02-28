@@ -6,20 +6,24 @@ import Reveal from "react-reveal/Reveal";
 const About = () => {
   return (
     <div id="about" className="my-16">
-      <h1 className="text-5xl text-center pb-10">
+      <h1 className="text-5xl text-center">
         About <span className="text-accent">Me</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
         <Reveal effect="fadeInUp">
           <figure>
-            <img className="w-54" src={aboutme} alt="Album" />
+            <img className="" src={aboutme} alt="Album" />
           </figure>
           <div className="">
             <h2 className="card-title">Abdullah Al-Mamun</h2>
-            <p className="md:w-2/3 my-3">
-              I am a Frontend(ReactJs)/Full-Stack(MERN) web developer with 6
-              months of learning/working experience. I love to work with logic
-              and build it by programming.
+            <p className="md:w-[75%] my-3">
+              I am a Frontend(ReactJs)/Full-Stack(MERN) web developer with 1
+              year+ of learning/working experience, and build some projects
+              based on MERN, I love to work with logic and build it by
+              programming, one more thing, I love to learn new technologies with
+              very much excitement. My experiences, training, and dedication to
+              the field of web development with my ability to build an
+              attractive web application.
             </p>
             <p>
               <span className="font-bold">Email:</span>{" "}

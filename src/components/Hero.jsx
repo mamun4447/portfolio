@@ -32,10 +32,12 @@ const Hero = () => {
         />
 
         <p className="mt-4 text-white mr-10">
-          I am a Frontend(ReactJs)/Full-Stack(MERN) web developer with 6 months
+          I am a Frontend(ReactJs)/Full-Stack(MERN) web developer with 1 year+
           of learning/working experience, and build some projects based on MERN,
           I love to work with logic and build it by programming, one more thing,
-          I love to learn new technologies.
+          I love to learn new technologies with very much excitement. My
+          experiences, training, and dedication to the field of web development
+          with my ability to build an attractive web application.
         </p>
         <a
           href="abdullah_al_mamun_resume.pdf"

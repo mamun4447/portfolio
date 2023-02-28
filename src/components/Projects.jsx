@@ -6,6 +6,7 @@ import Reveal from "react-reveal/Fade";
 import quiz from "../assets/quiz.png";
 import developer from "../assets/developer.png";
 import test from "../assets/test.png";
+import tars from "../assets/tars.png";
 
 const Projects = () => {
   const projects = [
@@ -57,6 +58,15 @@ const Projects = () => {
         "RectJs, Javascript, React router, Tailwind CSS, REST API , React Icon, Lottie files, npm packages",
       image: `${quiz}`,
       time: "25 Aug - 28 Aug 2022",
+    },
+    {
+      title: "Image gallery",
+      url: "https://jlpt5q-3000.preview.csb.app",
+      description:
+        "This is a front-end image gallery website, where user can there is search option available, also dark mode and light mode.",
+      technologies: "Javascript, Tailwind CSS, REST API",
+      image: `${tars}`,
+      time: "25 Feb - 27 Feb 2023",
     },
     {
       title: "Typing Speed Test",
